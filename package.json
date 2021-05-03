@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "server": "nodemon run server",
     "test": "cross-env NODE_ENV=testing jest --watch --verbose --runInBand"
   },
   "devDependencies": {
+    "nodemon": "^2.0.7",
     "@types/jest": "^26.0.22",
     "cross-env": "^7.0.3",
     "eslint": "^7.23.0",
@@ -15,6 +17,7 @@
     "supertest": "^6.1.3"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "shortid": "^2.2.16"
   },
   "repository": {
